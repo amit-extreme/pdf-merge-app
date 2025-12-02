@@ -45,5 +45,5 @@ This project is built with **Flask**, **PDF.js**, and **PyPDF2**.
 
 ### 1. Clone the repository
 ```bash
-git clone https://github.com/your-username/pdf-merge-app.git
+git clone https://github.com/amit-extreme/pdf-merge-app.git
 cd pdf-merge-app
