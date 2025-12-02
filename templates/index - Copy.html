@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Merge PDF Online</title>
+
+    <link rel="stylesheet" href="/static/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+</head>
+<body class="dark">
+
+<div class="container mt-4">
+
+    <div class="d-flex justify-content-between mb-3">
+        <h2 class="text-center">Merge PDFs</h2>
+
+        <button id="themeToggle" class="btn btn-secondary">Toggle Dark Mode</button>
+    </div>
+
+    <div id="drop-area" class="drop-area">
+        <p>Drag and drop PDF files here</p>
+        <p>or</p>
+        <button class="btn btn-primary" onclick="document.getElementById('file-input').click()">Select Files</button>
+        <input type="file" id="file-input" multiple accept="application/pdf" hidden>
+    </div>
+
+    <form id="pdfForm">
+        <div id="file-list"></div>
+
+        <button class="btn btn-success w-100 mt-3" type="submit">Merge PDFs</button>
+
+        <div class="progress mt-4" style="height: 20px; display:none;">
+            <div class="progress-bar progress-bar-striped progress-bar-animated" style="width: 0%">0%</div>
+        </div>
+    </form>
+
+</div>
+
+<script src="/static/script.js"></script>
+
+</body>
+</html>

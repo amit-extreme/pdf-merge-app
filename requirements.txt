@@ -1,0 +1,7 @@
+Flask
+PyPDF2
+gunicorn
+pdf2image
+Pillow
+supabase
+google-cloud-storage

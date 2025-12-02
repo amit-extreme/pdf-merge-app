@@ -1,0 +1,83 @@
+body.dark {
+    background: #1e1e1e;
+    color: white;
+}
+body.light {
+    background: white;
+    color: black;
+}
+
+.container {
+    max-width: 700px;
+    margin: auto;
+    padding: 20px;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.drop-area {
+    border: 2px dashed gray;
+    padding: 40px;
+    text-align: center;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    transition: .3s;
+}
+.drop-area.dragover {
+    background: #4a77ff;
+    color: white;
+    border-color: white;
+}
+
+.file-item {
+    display: flex;
+    background: #333;
+    padding: 12px;
+    margin-top: 10px;
+    border-radius: 10px;
+    gap: 15px;
+    align-items: center;
+}
+
+.thumbnail {
+    width: 70px;
+    height: 90px;
+    border: 1px solid #555;
+}
+
+.file-details input {
+    width: 100%;
+    margin-top: 6px;
+}
+
+.submit-btn {
+    margin-top: 15px;
+    width: 100%;
+    padding: 12px;
+    background: #0099ff;
+    border: none;
+    color: white;
+    border-radius: 6px;
+    font-size: 18px;
+}
+
+.progress {
+    width: 100%;
+    background: #444;
+    height: 25px;
+    margin-top: 20px;
+    border-radius: 8px;
+    overflow: hidden;
+}
+.progress-bar {
+    height: 100%;
+    background: #00cc66;
+    width: 0%;
+    text-align: center;
+    line-height: 25px;
+    color: black;
+}

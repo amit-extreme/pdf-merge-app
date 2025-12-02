@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Advanced PDF Merger</title>
+
+    <link rel="stylesheet" href="/static/style.css">
+
+    <!-- Sortable for drag-and-drop reordering -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Sortable/1.15.2/Sortable.min.js"></script>
+
+    <!-- PDF.js main library -->
+    <script src="https://cdn.jsdelivr.net/npm/pdfjs-dist@4.2.67/build/pdf.min.js"></script>
+
+    <!-- FIXED: Working PDF.js Worker -->
+    <script>
+        pdfjsLib.GlobalWorkerOptions.workerSrc =
+            "https://cdn.jsdelivr.net/npm/pdfjs-dist@4.2.67/build/pdf.worker.min.js";
+    </script>
+</head>
+
+<body class="dark">
+
+<div class="container">
+
+    <div class="header">
+        <h2>Advanced PDF Merger</h2>
+        <button id="themeToggle">Dark / Light</button>
+    </div>
+
+    <!-- Drag-drop area -->
+    <div id="drop-area" class="drop-area">
+        <p>Drag & Drop PDF files here</p>
+        <p>or</p>
+        <button onclick="document.getElementById('fileInput').click()">Select Files</button>
+        <input type="file" id="fileInput" multiple hidden accept="application/pdf" required>
+    </div>
+
+    <!-- Files List -->
+    <form id="pdfForm">
+        <div id="fileList"></div>
+
+        <button class="submit-btn" type="submit">Merge PDFs</button>
+
+        <!-- Progress bar -->
+        <div class="progress" id="progressBox" style="display:none;">
+            <div class="progress-bar" id="progressBar">0%</div>
+        </div>
+    </form>
+
+</div>
+
+<script src="/static/script.js"></script>
+
+</body>
+</html>
